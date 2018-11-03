@@ -15,21 +15,9 @@ public class Suger {
 		String condition = "A";
 		switch (condition) {
 		case "A":
-			System.out.println("字符串A");
+			System.out.println("1A");
 			break;
 		}
-		/*反编译的结果
-		String condition = "A";
-	    String str1;
-	    switch ((str1 = condition).hashCode())
-	    {
-	    case 65: 
-	      if (str1.equals("A")) {
-	        System.out.println("������A");
-	      }
-	      break;
-	    }*/
-		
 		try(InputStream is = new FileInputStream("path")) {
 			is.available();
 		} catch (IOException e) {
